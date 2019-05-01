@@ -31,5 +31,7 @@ rand_chacha = "0.1"
 rand = "0.6"
 
 [features]
+default = ["std"]
+std = ["byteorder/std", "rand_core/std", "curve25519-dalek/std", "rand/std"]
 nightly = ["clear_on_drop/nightly"]
 debug-transcript = ["hex"]
